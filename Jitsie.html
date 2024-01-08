@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+  <nav class="bg-black p-2 mt-0 w-full border-2 border-gray-400">
+    <div class="container mx-auto flex flex-wrap items-center">
+        <div class="flex w-full md:w-1/2 justify-between md:justify-start text-white font-extrabold">
+            <div class="jitsie-icons md:flex items-center">
+              <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+                <img src="./static/jisielogo.png" class="h-14 md:h-16 w-auto px-2" alt="Website Logo">
+            </a>
+            </div>
+            <button id="toggleBtn" class="md:hidden text-white">
+                Menu
+            </button>
+        </div>
+        <ul class="list-reset flex flex-col md:flex-row md:flex-none items-center hidden md:flex" id="navList">
+            <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline bg-black shadow-lg" href="#">Home</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline bg-black shadow-lg" href="#">Events</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline bg-black shadow-lg" href="#">Blogs</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline bg-black shadow-lg" href="#">Team</a>
+            </li>
+            <li class="mr-3">
+                <a class="inline-block py-2 px-4 text-white no-underline bg-black shadow-lg" href="#">Contact</a>
+            </li>
+            <li class="ml-6 mr-6">
+                <a class="inline-block py-2 px-4 text-black no-underline bg-purple-200 rounded-full" href="#">Join Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <footer class="bg-black text-white p-6">
+        <div class="container mx-auto flex justify-between items-start">
+          <div>
+            <img src="./static/jisielogo.png" class="h-32 md:h-24 w-auto px-2">
+
+            <p >Our vision is to provide convenience </p>
+            <p class="mb-2"> and help increase your sales business.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="bg-white rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                <i class="fab fa-facebook-f text-blue-600 text-sm"></i>
+              </a>
+              <a href="#" class="bg-white rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                <i class="fab fa-twitter text-blue-400 text-sm"></i>
+              </a>
+              <a href="#" class="bg-white rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                <i class="fab fa-wordpress text-black text-sm"></i>
+              </a>
+              <a href="#" class="bg-black rounded-full p-1 w-8 h-8 flex items-center justify-center">
+                <i class="fab fa-linkedin-in text-white text-sm"></i>
+              </a>
+            </div>
+            
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Company</h3>
+            <ul class="space-y-1">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Featured</a></li>
+              <li><a href="#">Partnership</a></li>
+              <li><a href="#">Business Relation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Community</h3>
+            <ul class="space-y-1">
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Invite a friend</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2 pr-10">Socials</h3>
+            <ul class="space-y-1 pr-10">
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-6 border-t border-gray-700 pt-6 flex justify-between">
+            <p>©2023. JITSIE. IITM. All rights reserved</p>
+            <div class="mt-2 space-x-4">
+              <a href="#">Privacy & Policy</a>
+              <a href="#">Terms & Condition</a>
+            </div>
+          </div>
+          
+      </footer>
+      
+</body>
+<script>
+  document.getElementById('toggleBtn').addEventListener('click', function () {
+      document.getElementById('navList').classList.toggle('hidden');
+  });
+</script>
+
+</html>
